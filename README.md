@@ -1,23 +1,21 @@
-# CategoryDepth�v���O�C���ɂ���
+# CategoryDepthプラグインについて
 
-## CategoryDepth�v���O�C���Ƃ�
+## CategoryDepthプラグインとは
 
-CategoryDepth�v���O�C���́A�J�e�S���̊K�w�̐[���𐔎��ŏo�͂��� Movable type �̃v���O�C���ł��B
+CategoryDepthプラグインは、カテゴリの階層の深さを数字で出力する Movable type のプラグインです。スタティックパブリッシングとダイナミックパブリッシング両方に対応しています。ダイナミックパブリッシングの方は藤本さんが書いてくれました（[tinybeansさんのCategoryDepthプラグインをダイナミック対応にしてみた - The blog of H.Fujimoto](http://www.h-fj.com/blog/archives/2012/09/06-132840.php)）。
 
-���̂Ƃ���X�^�e�B�b�N�p�u���b�V���O�݂̂̑Ή��ł��B���ƂŃ_�C�i�~�b�N�ɂ��Ή������܂��B
+## 使い方
 
-## �g����
+### カテゴリコンテキストで利用する場合
 
-### �J�e�S���R���e�L�X�g�ŗ��p����ꍇ
+カテゴリコンテキスト（MTCategoriesタグの中やカテゴリアーカイブなど）で利用する場合は <$MTCategoryDepth$> タグを利用します。
 
-�J�e�S���R���e�L�X�g�iMTCategories�^�O�̒���J�e�S���A�[�J�C�u�Ȃǁj�ŗ��p����ꍇ�� <$MTCategoryDepth$> �^�O�𗘗p���܂��B
+### ブログ記事コンテキストで利用する場合
 
-### �u���O�L���R���e�L�X�g�ŗ��p����ꍇ
+ブログ記事コンテキスト（MTEntriesタグの中やブログ記事アーカイブなど）で利用する場合は <$MTEntryCategoryDepth$> タグを利用します。
 
-�u���O�L���R���e�L�X�g�iMTEntries�^�O�̒���u���O�L���A�[�J�C�u�Ȃǁj�ŗ��p����ꍇ�� <$MTEntryCategoryDepth$> �^�O�𗘗p���܂��B
+ブログ記事がカテゴリに属していないときは空文字を返します。
 
-�u���O�L�����J�e�S���ɑ����Ă��Ȃ��Ƃ��͋󕶎���Ԃ��܂��B
+## インストール
 
-## �C���X�g�[��
-
-�_�E�����[�h����zip�t�@�C����W�J���ACategoryDepth�f�B���N�g����Movable Type��plugins�f�B���N�g���ɐݒu����Ί����ł��B
+ダウンロードしたzipファイルを展開し、CategoryDepthディレクトリをMovable Typeのpluginsディレクトリに設置すれば完了です。
