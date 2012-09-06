@@ -1,11 +1,18 @@
 <?php
-function smarty_function_mthdlr_categorydepth ($args, &$ctx) {
-    # ブログの取得
-    $blog = $ctx->stash('blog');
-    # エントリーの取得
+function smarty_function_mtentrycategorydepth ($args, &$ctx) {
+    require_once('block.mtparentcategories.php');
     $entry = $ctx->stash('entry');
-    # モディファイアの取得
-    $hoge = $args['hoge'];
-    return 'mt:CategoryDepth is Function Tag.(Dynamic)';
+    if (empty($entry)) {
+        return '';
+    }
+    $cat = $entry->category();
+    if (empty($cat)) {
+        return '';
+    }
+    else {
+        $parents = array();
+        get_parent_categories($cat, $ctx, $parents, 'category');
+        return count($parents) + 1;
+    }
 }
 ?>
