@@ -1,12 +1,12 @@
 # Category Depth
 #
-# Release 0.01 (2012-9-6)
+# Release 0.1.1 (2013-05-15)
 #
 # Copyright (c) Tomohiro Okuwaki. (Powered by mt-plug.in)
 name: Category Depth
 id: Category_Depth
 key: category_depth
-version: 0.01
+version: 0.1.1
 author_name: <__trans phrase="Tomohiro Okuwaki">
 author_link: http://www.tinybeans.net/blog/
 description: <__trans phrase="Output the depth of the hierarchy of categories.">
